@@ -1,0 +1,19 @@
+<div [style.background-color]="customColor()">
+  <input type="text" value="{{name}}">
+</div>
+
+<h2>Hi Friends {{str}}</h2>
+<button (click)="buttonGmgClick()">Good morning</button>
+<button (click)="buttonGftClick()">Good afternoon</button>
+
+<h2>Count -- {{counter}}</h2>
+<!-- <p>Count number is {{evenOrOdd}}</p> -->
+<button (click)="functionIncrement()">Increment</button>
+<button (click)="functionDecrement()">Decrement</button>
+
+<div style="margin-top: 20px">
+  <input type="text" [(ngModel)]="count">
+  <button (click) = "functionNumber()">Submit</button>
+  <p>count value: {{count}}</p>
+  <p>The number is {{evenOrOdd}}</p>
+</div>
